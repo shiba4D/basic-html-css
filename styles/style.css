@@ -12,6 +12,8 @@
     background-size: cover;
     background-position: bottom center;
     height: 100vh;
+    clip-path: polygon(0 0, 99% 0, 100% 30%, 100% 70%, 53% 100%, 48% 100%, 0% 70%, 0 34%);
+
 }
 .hero h1{
      color: wheat;
@@ -31,13 +33,11 @@
     margin: top 60px;
     margin-bottom: 60px; */
     margin: 60px auto;
-    border-width: 15px;
-    border-color:yellow;
-    border-style: solid;
-    background-color: rgb(173, 218, 218);
+    background: linear-gradient(45deg,rgb(223, 179, 186),rgb(82, 82, 219));
+
     padding: 60px;
 }
-.article h2{
+.article h2, #cow-type{
     text-align: center;
     font-size: 48px;
 
@@ -58,4 +58,19 @@
     background-color: yellow;
     display: inline-block;
     width: 600px;
+}
+
+.cow-images{
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    /* flex-wrap: wrap; */
+    justify-content: space-around;
+}
+
+.cow-images div{
+    width: 300px;
+}
+.cow-images flex-direction{
+    width: 100%;
 }
